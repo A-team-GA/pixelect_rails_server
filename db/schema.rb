@@ -59,7 +59,6 @@ ActiveRecord::Schema.define(version: 20141108220231) do
   end
 
   add_index "likes", ["image_id"], name: "index_likes_on_image_id", using: :btree
-  add_index "likes", ["user_id", "image_id"], name: "index_likes_on_user_id_and_image_id", unique: true, using: :btree
   add_index "likes", ["user_id"], name: "index_likes_on_user_id", using: :btree
 
   create_table "tags", force: true do |t|
